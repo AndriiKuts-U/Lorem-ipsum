@@ -44,6 +44,8 @@ Lorem Ipsum
 
 В будущем можно было бы ещё добавить комманду ***$rec***, которая используя данные из таблицы *orders* могла бы подсказать пользователю то блюдо, которое может ему понравится, на основе заказов пользователей с похожими вкусами.
 
+Также 
+
 ## How to try
 
 You can join our [Discord server](https://discord.gg/jNHVUYdz) to try Lunch assistant bot.
