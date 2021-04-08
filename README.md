@@ -51,6 +51,7 @@ Lorem Ipsum
 You can join our [Discord server](https://discord.gg/jNHVUYdz) to try Lunch assistant bot.
 Also, you can run Bot's code on our [Replit project](https://replit.com/@Megu5ta/Lorem-ipsum#main.py)
 
+
 ## Presentation
 
 *List any links to your presentation or additional materials that you want to share with the judges.*
