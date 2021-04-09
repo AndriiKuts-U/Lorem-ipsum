@@ -1,5 +1,6 @@
+# Copyright (c) [2021] [Andrii Kuts, Oleksandr Tsepkov]
+
 import discord
-from discord.ext import commands
 import os
 import requests
 import json
@@ -8,10 +9,7 @@ import json
 from keep_alive import keep_alive
 import my_db
 
-# now = datetime.datetime.now()
-
 client = discord.Client()
-bot = commands.Bot(command_prefix='', self_bot=True)
 
 command_list = {"$help": "Shows all available commands and their description",
 "$my_favorite": "Shows the top of your favorite dishes",
@@ -26,8 +24,7 @@ command_list = {"$help": "Shows all available commands and their description",
 "$show_orders": "shows the orders of all your teammates",
 "$chef": "Makes you chef of your team for today",
 "$whoIsChef": "Shows the current chef of your team",
-"$cancel <ORDER_ID>": "cancels your order which id is `<ORDER_ID>`",
-"$rec": "shows today's recomendation for you"}
+"$cancel <ORDER_ID>": "cancels your order which id is `<ORDER_ID>`"}
 
 
 def get_help_info():
@@ -52,13 +49,13 @@ def is_command_correct(msg_to_check):
 
 @client.event
 async def on_ready():
-  # my_db.drop_all()
+  my_db.drop_all()
   my_db.create_table_teams()
   my_db.create_table_users()
   my_db.create_table_restaurants()
   my_db.create_table_dishes()
-  # my_db.insert_into_restaurants()
-  # my_db.insert_into_dishes()
+  my_db.insert_into_restaurants()
+  my_db.insert_into_dishes()
   my_db.create_table_orders()
   my_db.create_table_chefs()
   print('We have logged in as {0.user}'.format(client))
@@ -246,7 +243,7 @@ async def on_message(message):
     if not is_command_correct(restaurant_id):
       restaurants = my_db.get_restaurants()
       info = "List of all restaurants:{}\n Use `$restaurant <RESTAURANT_ID>` to see restaurant menu".format(restaurants)
-      border_color = 0xff0000
+      border_color = 0x00ff00
     else:
       try:
         restaurant_id = int(restaurant_id[1])

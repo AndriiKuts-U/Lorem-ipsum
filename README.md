@@ -1,7 +1,5 @@
 # Hack Kosice Marathon: Lunch assistant
 
-*A template for projects submitted to HK Marathon 2021. You can [fork this repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) and use it as a starting point.*
-
 ## Team
 
 Lorem Ipsum
@@ -12,10 +10,7 @@ Lorem Ipsum
 - Oleksandr Tsepkov, Technical University of Kosice
 
 ## Description
-
-*A clear statement of the challenges, issues, problems or gaps that your project solves and a brief description of how your project tackles the areas. What is the value of your solution? Who are the target users?*
-
-Нашей целью было облегчить рутину заказа еды для компании людей. Для решения этой проблемы мы решили создать дискорд бота, потому что дискорд это популярная площадка, которая предоставляет все необходимые инструменты для создания такого рода помощника. Наша команда сделала бота, функционал которого подходит как для небольшого круга друзей так и для больших компаний.
+Our goal was to ease the routine of ordering food for a group of people. To solve this problem, we decided to create a discord bot, because discord is a popular platform that provides all the necessary tools to create this kind of assistant. Our team has made a bot, the functionality of which is suitable for both a small circle of friends and for large companies.
 ## Protoype
 
 *Describe the basic functionality of your prototype. What are the features you were able to implement? What features would you like to implement?*
@@ -35,12 +30,15 @@ Lorem Ipsum
 ***$whoIsChef***: "Shows the current chef of your team";
 ***$cancel <ORDER_ID>***: cancels your order which id is ***<ORDER_ID>***;
 
-Для использования полного функционала бота нужно состоять в команде. Для этого можно создать свою с помощью комманды ***$create <TEAM_NAME>*** и вы автоматически станете её участником, или же присоедениться к уже существующей комманде с помощью ***$join <TEAM_ID>***. Чтобы узнать ***<TEAM_ID>*** своей комманды можно воспользоваться коммандой ***$my_team***, которая заодно выпишет и всех её участников. Чтобы покинуть текущую команду придеться воспользоваться коммандой ***$leave***.
 
-Как в нашем представлении происходит ежедневное оформление заказов в компании с помощью нашего бота:
-каждый член команды делает заказы, выбирая из списка ресторанов, который можно посмотреть, написав боту ***$restaurant***, после этого бот выпишет все рестораны, которые находятся в базе данных. Список блюд конкретного ресторана отображается после комманды ***$restaurant <RESTAURANT_ID>***.
-Далее, можно сделать заказ блюда, с помощью комманды ***order <DISH_ID>***. ***$my_order*** Отображает список заказов, сделанных пользователем сегодня. Чтобы отменить какой-то конкретный заказ нужно будет написать комманду ***cancel <ORDER_ID>*** и указать id нужного заказа.
-Далее любой желающий может стать шефом на сегодня(оформлять заказы/доставку) использовав комманду ***$chef***, при этом шеф в комманде может быть только один. Посмотреть кто сегодня насмелился взять на себя эту роль можно написав комманду ***$whoIsChef***. 
+To use the full functionality of the bot, you need to be in a team. To do this, you can create your own using the ***$create <TEAM_NAME>*** command and you will automatically become a member of it, or you can join an existing team using ***$join <TEAM_ID>***. To find out the ***<TEAM_ID>*** of your team, you can use the command ***$my_team***, which at the same time will show you all members of your team. To leave the current team, you will have to use the ***$leave*** command.
+
+How, in our view, the daily ordering food of the company takes place using our bot:
+Each team member places orders by choosing from a list of restaurants that are in the database, which can be viewed by writing to the bot ***$restaurant***. The list of dishes for a particular restaurant will be displayed after entering the command ***$restaurant <RESTAURANT_ID>***.
+Next, you can order a dish using the ***$order <DISH_ID>*** command. ***$my_order*** Displays a list of orders placed by the user today. To cancel a specific order, you will need to write to the command ***$cancel <ORDER_ID>*** and enter the id of the required order.
+Further, anyone can become today's chef  (place orders/delivery) using the ***$chef*** command, while there can be only one chef in the team. You can see who today dared to take on this role by writing the command ***$whoIsChef***.
+To avoid a situation where no one wants to be a chef, it would be possible to add the opportunity to take advantage of the great power of random.
+
 
 ## How to try
 
@@ -48,17 +46,17 @@ You can join our [Discord server](https://discord.gg/jNHVUYdz) to try Lunch assi
 Also, you can run Bot's code on our [Replit project](https://replit.com/@Megu5ta/Lorem-ipsum#main.py)
 
 
-## Presentation
-
-*List any links to your presentation or additional materials that you want to share with the judges.*
-
 ## Challenges and accomplishments
 
-*Is there anything unexpected that you learned over the course of this project?*
+Almost everything was a challenge for our team while working on this project. Creating a bot, launching it, giving it some functionality, working with databases - we have achieved all this thanks to several videos on YouTube, a bit of code that generates errors, and an endless set of documentation and googling.
+Also, teamwork was initially a little problematic for us due to the fact that before that we always worked separately and plus to this we have every slightly different view of the way to solve the problem (this is probably even a positive feature). We did not know how to divide tasks among ourselves, how to cooperate, and in general how we imagine our product. But after *n* hours of teamwork, we got much better at it.
 
-*Is there something your team is particularly proud of, related to this project?*
 
 ## Next steps
+
+In the future, it would be possible to add the ***$recommendation*** command, which, using data from the *orders* table, could recommend the user dishes that he might like based on the orders of other users with similar tastes.
+
+It would also be nice to fill the tables with restaurants and dishes or add an api to automatically fill in the tables of restaurants and their menus.
 
 *What do you need to do next to turn this prototype into a working solution?*
 

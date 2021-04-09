@@ -1,7 +1,8 @@
+# Copyright (c) [2021] [Andrii Kuts, Oleksandr Tsepkov]
 import sqlite3 as sq
 import csv
 
-with sq.connect("server.db") as con:
+with sq.connect("data/server.db") as con:
     cur = con.cursor()
 
     def create_table_teams():
@@ -180,7 +181,7 @@ with sq.connect("server.db") as con:
       return info
 
     def insert_into_restaurants():
-      with open("restaurants.csv", "r") as file:
+      with open("data/restaurants.csv", "r") as file:
         rows = csv.reader(file)
         cur.executemany("INSERT INTO restaurants VALUES (?,?,?)", rows)
         con.commit()
@@ -188,7 +189,7 @@ with sq.connect("server.db") as con:
       # print(cur.fetchall())
       
     def insert_into_dishes():
-      with open("dishes.csv", "r") as file:
+      with open("data/dishes.csv", "r") as file:
         rows = csv.reader(file)
         cur.executemany("INSERT INTO dishes VALUES (?,?,?,?)", rows)
         con.commit()
