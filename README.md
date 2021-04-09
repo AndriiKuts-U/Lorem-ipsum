@@ -44,6 +44,8 @@ To avoid a situation where no one wants to be a chef, it would be possible to ad
 You can join our [Discord server](https://discord.gg/jNHVUYdz) to try Lunch assistant bot.
 Also, you can run Bot's code on our [Replit project](https://replit.com/@Megu5ta/Lorem-ipsum#main.py)
 
+## Presentation
+[ER-Diagram](https://github.com/AndriiKuts-U/Lorem-ipsum/blob/master/data/relation.png) 
 
 ## Challenges and accomplishments
 
