@@ -13,22 +13,21 @@ Lorem Ipsum
 Our goal was to ease the routine of ordering food for a group of people. To solve this problem, we decided to create a discord bot, because discord is a popular platform that provides all the necessary tools to create this kind of assistant. Our team has made a bot, the functionality of which is suitable for both a small circle of friends and for large companies.
 ## Protoype
 
-*Describe the basic functionality of your prototype. What are the features you were able to implement? What features would you like to implement?*
-Наш бот в данный момент поддерживает следующие комманды:
-***$help*** - Shows all available commands and their description;
-***$my_favorite*** - Shows the top of your favorite dishes;
-***$my_team***: Shows the info of your team and all its members;
-***$create <TEAM_NAME>***: creates team with ***<TEAM_NAME>***;
-***$join <TEAM_ID>***: join team which id is ***<TEAM_ID>***;
-***$leave***: Leave the current team;
-***$restaurant***: shows list of restaurants;
-***$restaurant <RESTAURANT_ID>***: choose a restaurant with ***<RESTAURANT_ID>***;
-***$order <DISH_ID>***: make order ***<DISH_ID>***;
-***$my_order***: shows your last order;
-***$show_orders***: shows the orders of all your teammates;
-***$chef***: Makes you chef of your team for today;
-***$whoIsChef***: Shows the current chef of your team;
-***$cancel <ORDER_ID>***: cancels your order which id is ***<ORDER_ID>***;
+Our bot currently supports the following commands:<br/>
+***$help*** - Shows all available commands and their description;<br/>
+***$my_favorite*** - Shows the top of your favorite dishes;<br/>
+***$my_team***: Shows the info of your team and all its members;<br/>
+***$create <TEAM_NAME>***: creates team with ***<TEAM_NAME>***;<br/>
+***$join <TEAM_ID>***: join team which id is ***<TEAM_ID>***;<br/>
+***$leave***: Leave the current team;<br/>
+***$restaurant***: shows list of restaurants;<br/>
+***$restaurant <RESTAURANT_ID>***: choose a restaurant with ***<RESTAURANT_ID>***;<br/>
+***$order <DISH_ID>***: make order ***<DISH_ID>***;<br/>
+***$my_order***: shows your last order;<br/>
+***$show_orders***: shows the orders of all your teammates;<br/>
+***$chef***: Makes you chef of your team for today;<br/>
+***$whoIsChef***: Shows the current chef of your team;<br/>
+***$cancel <ORDER_ID>***: cancels your order which id is ***<ORDER_ID>***;<br/>
 
 To use the full functionality of the bot, you need to be in a team. To do this, you can create your own using the ***$create <TEAM_NAME>*** command and you will automatically become a member of it, or you can join an existing team using ***$join <TEAM_ID>***. To find out the ***<TEAM_ID>*** of your team, you can use the command ***$my_team***, which at the same time will show you all members of your team. To leave the current team, you will have to use the ***$leave*** command.
 
