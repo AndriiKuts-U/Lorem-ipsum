@@ -209,6 +209,7 @@ async def on_message(message):
     await message.channel.send(embed=embedVar)
 
   ##################### only 1 chef per team ############
+  #updated
   if message.content.startswith('$chef'):
     info = ""
     border_color = 0x00ff00
