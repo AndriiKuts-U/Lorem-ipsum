@@ -58,8 +58,8 @@ In the future, it would be possible to add the ***$recommendation*** command, wh
 
 It would also be nice to fill the tables with restaurants and dishes or add an api to automatically fill in the tables of restaurants and their menus.
 
-*What do you need to do next to turn this prototype into a working solution?*
 
-## License
 
-*This repository includes an [unlicense](http://unlicense.org/) statement though you may want [to choose a different license](https://choosealicense.com/).*
+
+##License
+[License](https://github.com/AndriiKuts-U/Lorem-ipsum/blob/master/LICENSE)
