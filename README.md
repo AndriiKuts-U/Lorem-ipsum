@@ -60,6 +60,5 @@ It would also be nice to fill the tables with restaurants and dishes or add an a
 
 
 
-
-##License
+## License
 [License](https://github.com/AndriiKuts-U/Lorem-ipsum/blob/master/LICENSE)
