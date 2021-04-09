@@ -25,9 +25,9 @@ Our goal was to ease the routine of ordering food for a group of people. To solv
 ***$restaurant <RESTAURANT_ID>***: choose a restaurant with ***<RESTAURANT_ID>***;
 ***$order <DISH_ID>***: make order ***<DISH_ID>***;
 ***$my_order***: shows your last order;
-***$show_orders***: "shows the orders of all your teammates";
-***$chef***: "Makes you chef of your team for today";
-***$whoIsChef***: "Shows the current chef of your team";
+***$show_orders***: shows the orders of all your teammates;
+***$chef***: Makes you chef of your team for today;
+***$whoIsChef***: Shows the current chef of your team;
 ***$cancel <ORDER_ID>***: cancels your order which id is ***<ORDER_ID>***;
 
 
