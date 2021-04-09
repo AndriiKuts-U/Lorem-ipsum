@@ -70,6 +70,7 @@ with sq.connect("data/server.db") as con:
       con.commit()
 
     def add_chef(user_id,team_id):
+      cur.execute(f"DELETE FROM chefs WHERE team_id={team_id}")
       cur.execute(f"INSERT INTO chefs(user_id,team_id) VALUES({user_id},{team_id})")
       con.commit()
     

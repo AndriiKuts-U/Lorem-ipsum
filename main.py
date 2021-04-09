@@ -49,13 +49,13 @@ def is_command_correct(msg_to_check):
 
 @client.event
 async def on_ready():
-  my_db.drop_all()
+  # my_db.drop_all()
   my_db.create_table_teams()
   my_db.create_table_users()
   my_db.create_table_restaurants()
   my_db.create_table_dishes()
-  my_db.insert_into_restaurants()
-  my_db.insert_into_dishes()
+  # my_db.insert_into_restaurants()
+  # my_db.insert_into_dishes()
   my_db.create_table_orders()
   my_db.create_table_chefs()
   print('We have logged in as {0.user}'.format(client))
@@ -210,9 +210,16 @@ async def on_message(message):
 
   ##################### only 1 chef per team ############
   if message.content.startswith('$chef'):
-    team_id = my_db.get_users_team_id(message.author.id)
-    my_db.add_chef(message.author.id,team_id)
-    embedVar = discord.Embed(title="$chef", description="Congratulations, you are ordering food today\n", color=0x00ff00)
+    info = ""
+    border_color = 0x00ff00
+    if my_db.user_exists(message.author.id):
+      team_id = my_db.get_users_team_id(message.author.id)
+      my_db.add_chef(message.author.id,team_id)
+      info = "Congratulations, you are ordering food today\n"
+    else:
+      info = "You are not on any team.\n"
+      border_color = 0xff0000
+    embedVar = discord.Embed(title="$chef", description=info, color=border_color)
     await message.channel.send(embed=embedVar)
 
 
@@ -223,15 +230,20 @@ async def on_message(message):
 
 
   if message.content.startswith('$whoIsChef'):
-    team_id = my_db.get_users_team_id(message.author.id)
-    
-    nickname = my_db.get_chef(team_id)
-    if(nickname is None):
-      info = "You team don't have chef yet!\n"
-      border_color = 0xff0000
-    else:
-      info = "Your teams chef is `{}`\n".format(nickname)
+    info = ""
+    border_color = 0x00ff00
+    if my_db.user_exists(message.author.id):
+      team_id = my_db.get_users_team_id(message.author.id)
       border_color = 0x00ff00
+      nickname = my_db.get_chef(team_id)
+      if(nickname is None):
+        info = "You team don't have chef yet!\n"
+        border_color = 0xff0000
+      else:
+        info = "Your teams chef is `{}`\n".format(nickname)
+    else:
+      info = "You are not on any team.\n"
+      border_color = 0xff0000
     embedVar = discord.Embed(title="$whoIsChef", description=info, color=border_color)
     await message.channel.send(embed=embedVar)
 
