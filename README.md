@@ -30,7 +30,6 @@ Our goal was to ease the routine of ordering food for a group of people. To solv
 ***$whoIsChef***: Shows the current chef of your team;
 ***$cancel <ORDER_ID>***: cancels your order which id is ***<ORDER_ID>***;
 
-
 To use the full functionality of the bot, you need to be in a team. To do this, you can create your own using the ***$create <TEAM_NAME>*** command and you will automatically become a member of it, or you can join an existing team using ***$join <TEAM_ID>***. To find out the ***<TEAM_ID>*** of your team, you can use the command ***$my_team***, which at the same time will show you all members of your team. To leave the current team, you will have to use the ***$leave*** command.
 
 How, in our view, the daily ordering food of the company takes place using our bot:
