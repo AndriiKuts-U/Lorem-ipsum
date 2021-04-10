@@ -40,7 +40,7 @@ To avoid a situation where no one wants to be a chef, it would be possible to ad
 
 ## How to try
 
-You can join our [Discord server](https://discord.gg/jNHVUYdz) to try Lunch assistant bot.
+You can join our [Discord server](https://discord.gg/vBshwJfA) to try Lunch assistant bot.
 Also, you can run Bot's code on our [Replit project](https://replit.com/@Megu5ta/Lorem-ipsum#main.py)
 
 ## Presentation
