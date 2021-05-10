@@ -1,5 +1,7 @@
 # Hack Kosice Marathon: Lunch assistant
 
+## [Link to challenge](https://hackkosice.com/marathon/sudolabs/)
+
 ## Team
 
 Lorem Ipsum
